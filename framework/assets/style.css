@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #00f2ff; /* Color por defecto */
+    --bg-blur: 15px;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(var(--bg-blur));
+    -webkit-backdrop-filter: blur(var(--bg-blur));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.network-badge {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
