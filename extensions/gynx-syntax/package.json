@@ -1,0 +1,28 @@
+{
+  "name": "gynx-syntax",
+  "displayName": "Gynx Syntax",
+  "description": "Official syntax highlighting for GynxArchitecture.",
+  "version": "0.0.1",
+  "scripts": {
+    "run-gynx": "python ../../src/main.py ../../example.gynx"
+  },
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "gynx",
+      "aliases": ["Gynx", "gynx"],
+      "extensions": [".gynx",".gynxignore",".gnx",".gynxconf",".gynxlog",".gynx-theme",".gynxdocs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "gynx",
+      "scopeName": "source.gynx",
+      "path": "./syntaxes/gynx.tmLanguage.json"
+    }]
+  }
+}

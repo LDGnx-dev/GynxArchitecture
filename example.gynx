@@ -1,0 +1,4 @@
+SYSTEM_START "GynxCore"
+SHOW "Conexión con Tsuki establecida..."
+STATE 1
+SYSTEM_FINISH

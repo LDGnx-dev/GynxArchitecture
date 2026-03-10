@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Gynx",
+	"patterns": [
+		{
+			"name": "keyword.control.gynx",
+			"match": "\\b(SYSTEM_START|SYSTEM_FINISH)\\b"
+		},
+		{
+			"name": "keyword.other.gynx",
+			"match": "\\b(SHOW|STATE)\\b"
+		},
+		{
+			"name": "string.quoted.double.gynx",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gynx",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.gynx",
+			"match": "\\b[0-9]+\\b"
+		}
+	],
+	"scopeName": "source.gynx"
+}
